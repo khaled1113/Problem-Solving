@@ -1,4 +1,4 @@
-
+//seaerching from the the end of the array and then substr this part as it was name1 string 
     #include <iostream>
     using namespace std;
      
@@ -21,26 +21,3 @@
     }
 
 
-//another solutio
-#include <iostream>
-using namespace std;
-
-int main() {
-    string name1, name2;
-    cout << "Enter the first name: ";
-    getline(cin, name1);
-    cout << "Enter the second name: ";
-    getline(cin, name2);
-
-    // Extract last names
-    string lastName1 = name1.substr(0, name1.find(' '));
-    string lastName2 = name2.substr(0, name2.find(' '));
-
-    if (lastName1 == lastName2) {
-        cout << "They are brothers." << endl;
-    } else {
-        cout << "They are not brothers." << endl;
-    }
-
-    return 0;
-}
