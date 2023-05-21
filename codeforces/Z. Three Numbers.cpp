@@ -1,19 +1,30 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <cmath>
+#include <algorithm>
+#include <string>
 using namespace std;
  
-int main() { 
-    ios_base::sync_with_stdio(false); cin.tie(NULL); 
+int main() {
+	int count=0;
+long long s ,k,x,y,z;
+cin>>k>>s;
+for(int i=0;i<=k;i++){
  
-    int k, s;
-    cin >> k >> s;
-    int ans = 0;
-    for(int x = 0; x <= k; x++) {
-        for(int y = 0; y <= k; y++) {
-            int z = s-(x+y);
-            if(z >= 0 && z <= k) {
-                ans++;
-            }
-        }
-    }
-    cout << ans;
+	for(int j=0;j<=k;j++){
+ 
+		for(int w=0;w<=k;w++){
+ 
+ 
+if(i+j+w==s){
+ 
+count+=1;
+	
+}
+ 
+		}
+	}
+ 
+}
+cout<<count;
+ 
 }
