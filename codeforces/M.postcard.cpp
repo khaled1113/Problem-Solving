@@ -1,16 +1,16 @@
 #include <iostream>
-
+ 
 using namespace std;
-
+ 
 int main() {
     string password;
     int size;
     cin >> password >> size;
-
+ 
     int c = 0; // the count of characters in the string
     int l = 0; // the count of * and ?
     int j = 0; // the count of *
-
+ 
     for (int i = 0; i < password.size(); i++) {
         if (password[i] != '?' && password[i] != '*')
             c++;
@@ -19,7 +19,7 @@ int main() {
         if (password[i] == '*')
             j++;
     }
-
+ 
     if (c == size) {
         for (int i = 0; i < password.size(); i++) {
             if (password[i] != '*' && password[i] != '?')
@@ -40,7 +40,7 @@ int main() {
                 if (password[i] >= 'a' && password[i] <= 'z' && password[i] != '&')
                     cout << password[i];
             }
-
+ 
         } else {
             cout << "Impossible";
         }
@@ -65,6 +65,6 @@ int main() {
             }
         }
     }
-
+ 
     return 0;
 }
